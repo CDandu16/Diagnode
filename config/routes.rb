@@ -1,15 +1,11 @@
 Rails.application.routes.draw do
-  resources :microposts
-
-  resources :users
-
-  get 'users/index'
+  get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'users#index' #sets home page of site
+  # root 'welcome#index' #sets home page of site
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
