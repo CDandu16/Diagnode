@@ -1,0 +1,6 @@
+<%= simple_form_for @post do |form| %>
+  <%= form.input :age, label: "Patient's age" %>
+  <%= form.input :WBC, label: "White Blood Cell Count" %>
+  <%= form.input :Extras, label: "any additional information" %>
+  <%= form.button :submit %>
+<% end %>
