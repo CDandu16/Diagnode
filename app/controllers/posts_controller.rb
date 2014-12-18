@@ -8,7 +8,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(params.require(:post).permit(:age, :WBC, :Extras))
+    @post = Post.new(params.require(:post).permit(:title, :Extras))
     if @post.save
       redirect_to root_path
     else
