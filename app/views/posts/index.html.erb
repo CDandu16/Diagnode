@@ -3,6 +3,7 @@
   <div class="post">
     <h2><%= post.title %></h2>
     <p><%= "Extra information " + post.Extras %>
+    <td><%= link_to 'Show', post_path(post) %></td>
   </div>
 <% end %>
 <p><%= link_to "Add a new medical post", new_post_path %></p>
