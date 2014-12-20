@@ -10,12 +10,13 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(params.require(:post).permit(:title, :Extras))
     if @post.save
-      redirect_to root_path
+      redirect_to posts_path
     else
       render "new"
     end
   end
   def show
     @post = Post.find(params[:id])
+    #commontator_thread_show(@post)
   end
 end

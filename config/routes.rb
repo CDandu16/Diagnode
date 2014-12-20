@@ -12,6 +12,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
    root 'welcome#index' #sets home page of site
 
+  #comment system
+  mount Commontator::Engine => '/commontator'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
