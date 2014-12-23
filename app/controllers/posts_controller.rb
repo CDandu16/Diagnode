@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  #line below (before_filter) is to make sure user is logged in before he can view the page, uncomment line for final applicatoin
+  #before_filter :authenticate_user!
   def index
     @posts = Post.all
   end
