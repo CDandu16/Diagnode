@@ -49,3 +49,9 @@ gem 'commontator'
 
 #allows user to vote on comments
 gem 'acts_as_votable'
+
+#user aut
+gem 'devise'
+
+#bootstrap
+gem 'bootstrap-sass'
