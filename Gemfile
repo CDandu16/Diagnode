@@ -55,3 +55,6 @@ gem 'devise'
 
 #bootstrap
 gem 'bootstrap-sass'
+
+#sprockets
+gem 'sprockets-rails'
