@@ -6,8 +6,27 @@ body {
   font-size: 13px;
   line-height: 18px;
 }
+
 .body{
   background-color: #6396F3;
+}
+
+.heading {
+margin: 1px;
+color: #fff;
+padding: 3px 10px;
+cursor: pointer;
+position: relative;
+background-color:#6396F3;
+}
+
+.content {
+padding: 5px 10px;
+background-color:#fafafa;
+}
+
+.subtext{
+  font-size: 125%
 }
 
 .header1{
@@ -20,6 +39,11 @@ body {
   text-align:center;
   padding-bottom: 5%;
   font-size: 500%;
+}
+
+.text{
+    font-size: 250%;
+    padding-top: 1%;
 }
 
 .padding{

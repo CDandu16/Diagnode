@@ -1,12 +1,27 @@
-
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+  jQuery(".content").hide();
+  //toggle the componenet with class msg_body
+  jQuery(".heading").click(function()
+  {
+    jQuery(this).next(".content").slideToggle(500);
+  });
+});
+</script>
+<p class = "text-center text">
+  <%="Case:" + @post.title %>
 </p>
 
-<p>
-  <strong>Extras:</strong>
-  <%= @post.Extras %>
+<p class = "text-center subtext">
+  <%= @post.name%>
 </p>
 
+<div class = "col-sm-6">
+  <p class="heading"><%=@post.module1%> </p>
+    <div class = "content"><%= "Module 1 information" + @post.module1information%></div>
+    <div class = "text-center padding">
+    <%= button_to 'posts', posts_path, :method => :get, :class => "btn btn-success btn-lg"%>
+    </div>
+</div>
+<br></br>
 <%= commontator_thread(@post) %>

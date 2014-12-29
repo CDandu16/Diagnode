@@ -1,14 +1,12 @@
-<%= simple_form_for @post, url: posts_path, as: 'post', wrapper_mappings: {
-    check_boxes: :vertical_radio_and_checkboxes,
-    radio_buttons: :vertical_radio_and_checkboxes,
-    file: :vertical_file_input,
-    boolean: :vertical_boolean
-  } do |f| %>
-
-     <%= f.input :title, placeholder: 'Enter title' %>
-     <%= f.text_area :Extras%><br>
-     <%= button_to "submit", :class => "btn btn-primary btn-lg btn-block" %>
-
-<% end %>
-
-<%= link_to 'posts', posts_path %>
+<body>
+<%= simple_form_for @post, url: posts_path, as: 'post' do |f| %>
+  <div class = "vcenter">
+     <%= f.input :title, placeholder: 'Enter title of case' %>
+     <%= f.hidden_field :name, :value => current_user.email%>
+     <%= f.input :module1, placeholder: 'Enter first information' %>
+     <%= f.text_area :module1information, placeholder: 'enter information for first module' %>
+  </div>
+  <%= f.button :submit, "submit", :class => "btn btn-success btn-lg" %>
+  <% end %>
+  <%= link_to 'posts', posts_path %>
+</body>

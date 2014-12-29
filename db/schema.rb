@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141223063441) do
+ActiveRecord::Schema.define(version: 20141229034319) do
 
   create_table "commontator_comments", force: true do |t|
     t.string   "creator_type"
@@ -56,10 +56,37 @@ ActiveRecord::Schema.define(version: 20141223063441) do
   add_index "commontator_threads", ["commontable_id", "commontable_type"], name: "index_commontator_threads_on_c_id_and_c_type", unique: true
 
   create_table "posts", force: true do |t|
+    t.string   "title"
     t.string   "Extras"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "title"
+    t.string   "name"
+    t.string   "module1"
+    t.string   "module1information"
+    t.string   "module2"
+    t.string   "module2information"
+    t.string   "module3"
+    t.string   "module3information"
+    t.string   "module4"
+    t.string   "module4information"
+    t.string   "module5"
+    t.string   "module5information"
+    t.string   "module6"
+    t.string   "module6information"
+    t.string   "module7"
+    t.string   "module7information"
+    t.string   "module8"
+    t.string   "module8information"
+    t.string   "module9"
+    t.string   "module9information"
+    t.string   "module10"
+    t.string   "module10information"
+    t.string   "module11"
+    t.string   "module11information"
+    t.string   "module12"
+    t.string   "module12information"
+    t.string   "module13"
+    t.string   "module13information"
   end
 
   create_table "users", force: true do |t|
