@@ -10,7 +10,10 @@ class PostsController < ApplicationController
   end
 
   def edit
-    
+    @post = Post.find(params[:id])
+  end
+
+  def destroy
   end
 
   def create
@@ -24,4 +27,7 @@ class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
   end
+
+  private
+
 end
