@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'welcome#index' #sets home page of site
+   root 'posts#index' #sets home page of site
 
   #comment system
   mount Commontator::Engine => '/commontator'

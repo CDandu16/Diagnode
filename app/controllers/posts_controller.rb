@@ -9,6 +9,10 @@ class PostsController < ApplicationController
     @post = Post.new
   end
 
+  def edit
+    
+  end
+
   def create
     @post = Post.new(params.require(:post).permit(:title, :name, :module1, :module1information))
     if @post.save
