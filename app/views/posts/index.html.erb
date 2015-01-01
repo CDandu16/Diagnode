@@ -4,9 +4,6 @@
   <div class="post">
     <h2><%= post.title %></h2>
     <p><%= post.module1 %></p>
-    <% if can? :edit, @post %>
-      <p><%= button_to "Edit", edit_post_path(@post), :method => :get %></p>
-    <% end %>
     <td><%= button_to 'Show', post_path(post), :class => "btn btn-default", :method => :get %></td>
   </div>
 

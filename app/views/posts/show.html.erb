@@ -11,6 +11,10 @@ jQuery(document).ready(function() {
 <p class = "text-center text">
   <%="Case:" + @post.title %>
 </p>
+<% if can? :edit, @post %>
+<p><%= button_to "Edit", edit_post_path(@post), :method => :get %></p>
+<% end %>
+
 
 <p class = "text-center subtext">
   <%= @post.name%>

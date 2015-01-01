@@ -13,6 +13,13 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
 
+  def update
+    @post= Post.find params[:id]
+    @post.update_attributes!(params[:title, :name, :module1, :module1information])
+    flash[:notice] = "#{@post.title} was successfully updated."
+    redirect_to posts_path
+  end
+
   def destroy
   end
 
@@ -24,6 +31,7 @@ class PostsController < ApplicationController
       render "new"
     end
   end
+
   def show
     @post = Post.find(params[:id])
   end
