@@ -4,9 +4,11 @@
   <div class="post">
     <h2><%= post.title %></h2>
     <p><%= post.module1 %></p>
-    <p><%# button_to 'edit', edit_post_path(post)%></p>
+    <% if can? :edit, @post %>
+      <p><%= button_to "Edit", edit_post_path(@post), :method => :get %></p>
+    <% end %>
     <td><%= button_to 'Show', post_path(post), :class => "btn btn-default", :method => :get %></td>
   </div>
 
 <% end %>
-<p><%= link_to "Add a new medical post", new_post_path %></p>
+<div class = "text-center padding"><%= button_to 'Add a new medical post', new_post_path, :class => "btn btn-default", :method => :get %></div>
