@@ -58,3 +58,6 @@ gem 'bootstrap-sass'
 
 #sprockets
 gem 'sprockets-rails'
+
+#cancan gem for authorization
+gem 'cancancan'

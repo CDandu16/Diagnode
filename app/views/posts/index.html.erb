@@ -3,7 +3,8 @@
 
   <div class="post">
     <h2><%= post.title %></h2>
-    <p><%= post.module1 %></p.
+    <p><%= post.module1 %></p>
+    <p><%# button_to 'edit', edit_post_path(post)%></p>
     <td><%= button_to 'Show', post_path(post), :class => "btn btn-default", :method => :get %></td>
   </div>
 

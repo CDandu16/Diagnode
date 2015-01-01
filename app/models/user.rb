@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  ROLES = ['student', 'doctor', 'proffesor']
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   acts_as_commontator
