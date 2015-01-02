@@ -15,12 +15,112 @@ jQuery(document).ready(function() {
        <%= f.input :title, placeholder: 'Enter title of case' %>
        <%= f.hidden_field :name, :value => current_user.email%>
        <div class = "heading">
-         <%= f.input :module1, placeholder: 'Enter first information' %>
+         <%= f.input :module1, placeholder: 'Enter information', :value => "nil" %>
        </div>
 
        <div class = "content formtextarea">
-         <%= f.text_area :module1information, placeholder: 'enter information fo first module' %>
+         <%= f.text_area :module1information, placeholder: 'enter information' %>
        </div>
+
+       <div class = "heading">
+         <%= f.input :module2, placeholder: 'Enter information', :value => "nil" %>
+       </div>
+
+       <div class = "content formtextarea">
+         <%= f.text_area :module2information, placeholder: 'enter information' %>
+       </div>
+
+       <div class = "heading">
+         <%= f.input :module3, placeholder: 'Enter information', :value => "nil" %>
+       </div>
+
+       <div class = "content formtextarea">
+         <%= f.text_area :module3information, placeholder: 'enter information' %>
+       </div>
+
+       <div class = "heading">
+         <%= f.input :module4, placeholder: 'Enter information', :value => "nil" %>
+       </div>
+
+       <div class = "content formtextarea">
+         <%= f.text_area :module4information, placeholder: 'enter information' %>
+       </div>
+
+       <div class = "heading">
+         <%= f.input :module5, placeholder: 'Enter information', :value => "nil" %>
+       </div>
+
+       <div class = "content formtextarea">
+         <%= f.text_area :module5information, placeholder: 'enter information' %>
+       </div>
+
+       <div class = "heading">
+         <%= f.input :module6, placeholder: 'Enter information', :value => "nil" %>
+       </div>
+
+       <div class = "content formtextarea">
+         <%= f.text_area :module6information, placeholder: 'enter information' %>
+       </div>
+
+       <div class = "heading">
+         <%= f.input :module7, placeholder: 'Enter information', :value => "nil" %>
+       </div>
+
+       <div class = "content formtextarea">
+         <%= f.text_area :module7information, placeholder: 'enter information' %>
+       </div>
+
+       <div class = "heading">
+         <%= f.input :module8, placeholder: 'Enter information', :value => "nil" %>
+       </div>
+
+       <div class = "content formtextarea">
+         <%= f.text_area :module8information, placeholder: 'enter information' %>
+       </div>
+
+       <div class = "heading">
+         <%= f.input :module9, placeholder: 'Enter information', :value => "nil" %>
+       </div>
+
+       <div class = "content formtextarea">
+         <%= f.text_area :module9information, placeholder: 'enter information' %>
+       </div>
+
+
+       <div class = "heading">
+         <%= f.input :module10, placeholder: 'Enter information', :value => "nil" %>
+       </div>
+
+       <div class = "content formtextarea">
+         <%= f.text_area :module10information, placeholder: 'enter information' %>
+       </div>
+
+
+       <div class = "heading">
+         <%= f.input :module11, placeholder: 'Enter information', :value => "nil" %>
+       </div>
+
+       <div class = "content formtextarea">
+         <%= f.text_area :module11information, placeholder: 'enter information' %>
+       </div>
+
+
+       <div class = "heading">
+         <%= f.input :module12, placeholder: 'Enter information', :value => "nil" %>
+       </div>
+
+       <div class = "content formtextarea">
+         <%= f.text_area :module12information, placeholder: 'enter information' %>
+       </div>
+
+       <div class = "heading">
+         <%= f.input :module13, placeholder: 'Enter information', :value => "nil" %>
+       </div>
+
+       <div class = "content formtextarea">
+         <%= f.text_area :module13information, placeholder: 'enter information' %>
+       </div>
+
        <div class = "text-center padding">
         <%= f.button :submit, "submit", :class => "btn btn-success btn-lg" %>
        </div>
