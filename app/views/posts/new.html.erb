@@ -11,8 +11,13 @@ jQuery(document).ready(function() {
 <script type = "text/javascript">
 jQuery(document).ready(function() {
   jQuery(".hidden1").hide();
+  var counter = 2;
   document.getElementById('newmodule').addEventListener('click', function() {
-    jQuery(".hidden1").show();
+      while(counter<13){
+      var div = "id" + counter;
+      $("id" + counter).show();
+      counter++;
+      }
   }, false);
 });
 </script>
