@@ -8,20 +8,33 @@ jQuery(document).ready(function() {
   });
 });
 </script>
+<script type = "text/javascript">
+jQuery(document).ready(function() {
+  jQuery(".hidden1").hide();
+  document.getElementById('newmodule').addEventListener('click', function() {
+    jQuery(".hidden1").show();
+  }, false);
+});
+</script>
 
 <body>
   <div class = "vcenter">
   <%= simple_form_for @post, url: posts_path, as: 'post' do |f| %>
        <%= f.input :title, placeholder: 'Enter title of case' %>
        <%= f.hidden_field :name, :value => current_user.email%>
+
+      <div id = "id1" >
        <div class = "heading">
          <%= f.input :module1, placeholder: 'Enter information', :value => "nil" %>
        </div>
 
+
        <div class = "content formtextarea">
          <%= f.text_area :module1information, placeholder: 'enter information' %>
        </div>
+     </div>
 
+     <div id = "id2" class = "hidden1">
        <div class = "heading">
          <%= f.input :module2, placeholder: 'Enter information', :value => "nil" %>
        </div>
@@ -29,7 +42,9 @@ jQuery(document).ready(function() {
        <div class = "content formtextarea">
          <%= f.text_area :module2information, placeholder: 'enter information' %>
        </div>
+     </div>
 
+     <div id = "id3" class = "hidden1">
        <div class = "heading">
          <%= f.input :module3, placeholder: 'Enter information', :value => "nil" %>
        </div>
@@ -37,7 +52,9 @@ jQuery(document).ready(function() {
        <div class = "content formtextarea">
          <%= f.text_area :module3information, placeholder: 'enter information' %>
        </div>
+     </div>
 
+     <div id = "id4" class = "hidden1">
        <div class = "heading">
          <%= f.input :module4, placeholder: 'Enter information', :value => "nil" %>
        </div>
@@ -45,7 +62,9 @@ jQuery(document).ready(function() {
        <div class = "content formtextarea">
          <%= f.text_area :module4information, placeholder: 'enter information' %>
        </div>
+     </div>
 
+      <div id = "id5" class = "hidden1">
        <div class = "heading">
          <%= f.input :module5, placeholder: 'Enter information', :value => "nil" %>
        </div>
@@ -53,7 +72,9 @@ jQuery(document).ready(function() {
        <div class = "content formtextarea">
          <%= f.text_area :module5information, placeholder: 'enter information' %>
        </div>
+      </div>
 
+      <div id = "id6" class = "hidden1">
        <div class = "heading">
          <%= f.input :module6, placeholder: 'Enter information', :value => "nil" %>
        </div>
@@ -61,7 +82,9 @@ jQuery(document).ready(function() {
        <div class = "content formtextarea">
          <%= f.text_area :module6information, placeholder: 'enter information' %>
        </div>
+     </div>
 
+     <div id = "id7" class = "hidden1">
        <div class = "heading">
          <%= f.input :module7, placeholder: 'Enter information', :value => "nil" %>
        </div>
@@ -69,7 +92,9 @@ jQuery(document).ready(function() {
        <div class = "content formtextarea">
          <%= f.text_area :module7information, placeholder: 'enter information' %>
        </div>
+     </div>
 
+     <div id = "id8" class = "hidden1">
        <div class = "heading">
          <%= f.input :module8, placeholder: 'Enter information', :value => "nil" %>
        </div>
@@ -77,25 +102,31 @@ jQuery(document).ready(function() {
        <div class = "content formtextarea">
          <%= f.text_area :module8information, placeholder: 'enter information' %>
        </div>
+     </div>
 
+    <div id = "id9" class = "hidden1">
        <div class = "heading">
          <%= f.input :module9, placeholder: 'Enter information', :value => "nil" %>
        </div>
 
+
        <div class = "content formtextarea">
          <%= f.text_area :module9information, placeholder: 'enter information' %>
        </div>
+     </div>
 
-
+    <div id = "id10" class = "hidden1">
        <div class = "heading">
          <%= f.input :module10, placeholder: 'Enter information', :value => "nil" %>
        </div>
 
+
        <div class = "content formtextarea">
          <%= f.text_area :module10information, placeholder: 'enter information' %>
        </div>
+     </div>
 
-
+      <div id = "id11" class = "hidden1">
        <div class = "heading">
          <%= f.input :module11, placeholder: 'Enter information', :value => "nil" %>
        </div>
@@ -103,8 +134,9 @@ jQuery(document).ready(function() {
        <div class = "content formtextarea">
          <%= f.text_area :module11information, placeholder: 'enter information' %>
        </div>
+     </div>
 
-
+    <div id = "id12" class = "hidden1">
        <div class = "heading">
          <%= f.input :module12, placeholder: 'Enter information', :value => "nil" %>
        </div>
@@ -112,7 +144,9 @@ jQuery(document).ready(function() {
        <div class = "content formtextarea">
          <%= f.text_area :module12information, placeholder: 'enter information' %>
        </div>
+    </div>
 
+    <div id = "id13" class = "hidden1">
        <div class = "heading">
          <%= f.input :module13, placeholder: 'Enter information', :value => "nil" %>
        </div>
@@ -120,6 +154,11 @@ jQuery(document).ready(function() {
        <div class = "content formtextarea">
          <%= f.text_area :module13information, placeholder: 'enter information' %>
        </div>
+    </div>
+
+    <div class = "padding text-center">
+      <input type=button value="new module" id = "newmodule">
+    </div>
 
        <div class = "text-center padding">
         <%= f.button :submit, "submit", :class => "btn btn-success btn-lg" %>
