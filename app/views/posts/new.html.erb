@@ -28,7 +28,7 @@ jQuery(document).ready(function() {
 <body>
   <div class = "vcenter">
   <%= simple_form_for @post, url: posts_path, as: 'post' do |f| %>
-       <%= f.input :title, placeholder: 'Enter title of case' %>
+       <%= f.input :title, placeholder: 'Enter title of case'%>
        <%= f.hidden_field :name, :value => current_user.email%>
 
       <div id = "id1" >
@@ -44,11 +44,11 @@ jQuery(document).ready(function() {
 
      <div id = "id2" class = "hidden1">
        <div class = "heading">
-         <%= f.input :module2, placeholder: 'Enter information', :value => "nil" %>
+         <%= f.input :module2, placeholder: 'Enter information'%>
        </div>
 
        <div class = "content formtextarea">
-         <%= f.text_area :module2information, placeholder: 'enter information' %>
+         <%= f.text_area :module2information, placeholder: 'enter information'%>
        </div>
      </div>
 

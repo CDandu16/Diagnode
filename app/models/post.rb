@@ -4,29 +4,29 @@ class Post < ActiveRecord::Base
   validates :name, presence: true
   validates :module1, presence: true
   validates :module1information, presence: true
-  validates :module2, presence: true
-  validates :module2information, presence: true
-  validates :module3, presence: true
-  validates :module3information, presence: true
-  validates :module4, presence: true
-  validates :module4information, presence: true
-  validates :module5, presence: true
-  validates :module5information, presence: true
-  validates :module6, presence: true
-  validates :module6information, presence: true
-  validates :module7, presence: true
-  validates :module7information, presence: true
-  validates :module8, presence: true
-  validates :module8information, presence: true
-  validates :module9, presence: true
-  validates :module9information, presence: true
-  validates :module10, presence: true
-  validates :module10information, presence: true
-  validates :module11, presence: true
-  validates :module11information, presence: true
-  validates :module12, presence: true
-  validates :module12information, presence: true
-  validates :module13, presence: true
-  validates :module13information, presence: true
+  validates :module2, presence: false
+  validates :module2information, presence: false
+  validates :module3, presence: false
+  validates :module3information, presence: false
+  validates :module4, presence: false
+  validates :module4information, presence: false
+  validates :module5, presence: false
+  validates :module5information, presence: false
+  validates :module6, presence: false
+  validates :module6information, presence: false
+  validates :module7, presence: false
+  validates :module7information, presence: false
+  validates :module8, presence: false
+  validates :module8information, presence: false
+  validates :module9, presence: false
+  validates :module9information, presence: false
+  validates :module10, presence: false
+  validates :module10information, presence: false
+  validates :module11, presence: false
+  validates :module11information, presence: false
+  validates :module12, presence: false
+  validates :module12information, presence: false
+  validates :module13, presence: false
+  validates :module13information, presence: false
   belongs_to :user
 end
