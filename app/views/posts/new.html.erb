@@ -13,10 +13,13 @@ jQuery(document).ready(function() {
   jQuery(".hidden1").hide();
   var counter = 2;
   document.getElementById('newmodule').addEventListener('click', function() {
-      while(counter<13){
+      if(counter<14){
       var div = "id" + counter;
-      $("id" + counter).show();
+      $("#" + div).show();
       counter++;
+      }
+      if(counter == 14){
+        $('#newmodule').hide();
       }
   }, false);
 });
@@ -162,7 +165,7 @@ jQuery(document).ready(function() {
     </div>
 
     <div class = "padding text-center">
-      <input type=button value="new module" id = "newmodule">
+      <input type=button value="new module" id = "newmodule" class = "btn btn-lg">
     </div>
 
        <div class = "text-center padding">
