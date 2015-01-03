@@ -29,5 +29,4 @@ class Post < ActiveRecord::Base
   validates :module13, presence: true
   validates :module13information, presence: true
   belongs_to :user
-
 end
