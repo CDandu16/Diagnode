@@ -10,9 +10,9 @@
       </script>
   <![endif]-->
 </head>
-<body>
+<body style = "padding-top: 70px;">
   <% if user_signed_in? %>
-      <nav class="navbar navbar-default navbar-static-top">
+      <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -28,8 +28,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><%= button_to "new post", new_post_path, :class => "btn btn-default navbar-btn" %></li>
-            <li><%= button_to('Edit registration', edit_user_registration_path, :class => "btn btn-default navbar-btn") %></li>
+            <li><%= button_to "new post", new_post_path, :class => "btn btn-default navbar-btn", :method => :get %></li>
+            <li><%= button_to('Edit registration', edit_user_registration_path, :method => :get, :class => "btn btn-default navbar-btn") %></li>
             <li><%= button_to('Logout', destroy_user_session_path, :method => :delete, :class => "btn btn-default navbar-btn") %></li>
           </ul>
         </div><!-- /.navbar-collapse -->
