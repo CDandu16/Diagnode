@@ -21,11 +21,4 @@ jQuery(document).ready(function() {
 </p>
 
 <div class = "col-sm-6">
-  <p class="heading"><%=@post.module1%> </p>
-    <div class = "content"><%= "Module 1 information" + @post.module1information%></div>
-    <div class = "text-center padding">
-    <%= button_to 'posts', posts_path, :method => :get, :class => "btn btn-success btn-lg"%>
-    </div>
 </div>
-<br></br>
-<%= commontator_thread(@post) %>

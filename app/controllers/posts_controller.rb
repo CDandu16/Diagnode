@@ -15,19 +15,7 @@ class PostsController < ApplicationController
 
   def update
     @post= Post.find params[:id]
-    @post.update_attributes!(params[:title, :name, :module1, :module1information,\
-:module2, :module2information,\
-:module3, :module3information,\
-:module4, :module4information,\
-:module5, :module5information,\
-:module6, :module6information,\
-:module7, :module7information,\
-:module8, :module8information,\
-:module9, :module9information,\
-:module10, :module10information,\
-:module11, :module11information,\
-:module12, :module12information,\
-:module13, :module13information])
+    @post.update_attributes!(params[:title, :name])
     flash[:notice] = "#{@post.title} was successfully updated."
     redirect_to posts_path
   end
@@ -51,6 +39,6 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :name, :module1, :module1information, :module2, :module2information, :module3, :module3information, :module4, :module4information, :module5, :module5information, :module6, :module6information, :module7, :module7information, :module8, :module8information, :module9, :module9information, :module10, :module10information, :module11, :module11information, :module12, :module12information, :module13, :module13information)
+    params.require(:post).permit(:title, :name)
   end
 end

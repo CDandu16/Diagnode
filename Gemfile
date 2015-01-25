@@ -44,9 +44,6 @@ gem 'simple_form'
 #page parser decides how many posts per page
 gem 'kaminari'
 
-#comment system
-gem 'commontator'
-
 #allows user to vote on comments
 gem 'acts_as_votable'
 

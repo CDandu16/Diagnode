@@ -12,10 +12,7 @@ Rails.application.routes.draw do
 
   #sets home page of site with root
    root 'posts#index'
-
-  #comment system
-  mount Commontator::Engine => '/commontator'
-
+   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
