@@ -5,6 +5,6 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  ROLES = %w[student doctor professor]
+  ROLES = %i[student professor doctor]
 
 end
