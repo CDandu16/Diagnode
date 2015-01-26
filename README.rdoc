@@ -4,7 +4,6 @@ Things to do
 1. file upload with ajax
 2. getting buttons on navbar working
 3. add groups
-4. add name attribute to devise sign up
 5. Making own comment engine
 6. add cancan(almost done)
 7. adding ability to do multiple forms properly

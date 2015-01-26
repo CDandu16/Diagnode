@@ -5,9 +5,7 @@ class Ability
     # Define abilities for the passed in user here. For example:
     #
     user ||= User.new  #guest user
-      if user.role? == :professor
-        can :manage, :all
-      end
+      can :manage, :all  if user.role == ("student")
 
   end
     #

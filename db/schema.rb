@@ -18,7 +18,8 @@ ActiveRecord::Schema.define(version: 20150125202818) do
     t.string   "Extras"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "name"
+    t.string   "first_name"
+    t.string   "last_name"
   end
 
   create_table "subcategories", force: true do |t|

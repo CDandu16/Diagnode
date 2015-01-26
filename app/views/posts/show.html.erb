@@ -11,14 +11,15 @@ jQuery(document).ready(function() {
 <p class = "text-center text">
   <%="Case:" + @post.title %>
 </p>
-<% if cannot? :manage, @post%>
-  <p><%= button_to "Edit", edit_post_path(@post), :method => :get %></p>
-<% end %>
-
 
 <p class = "text-center subtext">
-  <%= @post.name%>
+  <%= @post.first_name%>
+  <%= @post.last_name%>
 </p>
+
+<% if can? :manage, @post %>
+  <p><%= button_to "Edit", edit_post_path(@post), :method => :get %></p>
+<% end %>
 
 <div class = "col-sm-6">
 </div>

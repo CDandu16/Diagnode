@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  devise_for :users
   #get 'posts/index'
 
   #get 'posts/new'
@@ -12,7 +11,9 @@ Rails.application.routes.draw do
 
   #sets home page of site with root
    root 'posts#index'
-   
+
+   devise_for :users, controllers: { registrations: "registrations" }
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

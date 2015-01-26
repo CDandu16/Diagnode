@@ -29,7 +29,8 @@ jQuery(document).ready(function() {
   <div class = "vcenter">
   <%= simple_form_for @post, url: posts_path, as: 'post' do |f| %>
        <%= f.input :title, placeholder: 'Enter title of case'%>
-       <%= f.hidden_field :name, :value => current_user.email%>
+       <%= f.hidden_field :first_name, :value => current_user.first_name%>
+       <%= f.hidden_field :last_name, :value => current_user.last_name%>
 
 
    <div class = "padding text-center">
