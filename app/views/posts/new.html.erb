@@ -31,6 +31,8 @@ jQuery(document).ready(function() {
        <%= f.input :title, placeholder: 'Enter title of case'%>
        <%= f.hidden_field :first_name, :value => current_user.first_name%>
        <%= f.hidden_field :last_name, :value => current_user.last_name%>
+       <%= f.hidden_field :email, :value => current_user.email%>
+
 
 
    <div class = "padding text-center">

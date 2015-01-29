@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20150125202818) do
     t.datetime "updated_at"
     t.string   "first_name"
     t.string   "last_name"
+    t.string   "email"
   end
 
   create_table "subcategories", force: true do |t|
