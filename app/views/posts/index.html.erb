@@ -7,4 +7,7 @@
   </div>
 
 <% end %>
-<div class = "text-center padding"><%= button_to 'Add a new medical post', new_post_path, :class => "btn btn-default", :method => :get %></div>
+
+<% if (can? :manage, @post) %>
+  <div class = "text-center padding"><%= button_to 'Add a new medical post', new_post_path, :class => "btn btn-default", :method => :get %></div>
+<%end%>
